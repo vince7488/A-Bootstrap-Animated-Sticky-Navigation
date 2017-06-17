@@ -1,3 +1,5 @@
+$nh: 85px;
+
 @mixin verticalcentre {
   display:block;
   position:relative;
@@ -5,17 +7,109 @@
   transform:translateY(-50%);
 }
 
+//Media Query Breaks
+$minimum: "only screen and (max-width: 320px)";
+$smallScr: "only screen and (min-width: 321px) and (max-width:479px)";
+$smartphone: "only screen and (min-width: 480px) and (max-width:767px)";
+
+//Reset Bootstrap Nav Styles
+.navbar {
+	min-height: inherit;
+}
+.navbar-brand {
+  height:auto;
+	padding: 0px;
+}
+.nav>li>a {
+	padding: 0px;
+	display: block;
+}
+
+.admin>#contain-body {
+  margin-top:40px; //adjusts the whole body of your content to accomodate the CMS admin bar.  You must manipulate this positioning with a conditional on whichever language your CMS uses.  For example, WordPress 'is_admin'.
+}
+
 #contain-body {
   padding:0px; //override padding of bootstrap container-fluid
-  margin-top:40px; //adjusts the whole body of your content to accomodate the CMS admin bar.  You must manipulate this positioning with a conditional on whichever language your CMS uses.  For example, WordPress 'is_admin'.
 
-nav {
-  background-color:#d1baff;
-  border:none;
-  border-bottom:2px #fff solid;
-  border-radius: 0px;
-  margin:0px;
-}
+  nav.navbar.sticky {
+    background-color:rgba(232, 221, 255, 0.88);
+    position:fixed;
+    width:100%;
+
+    .navbar-header {
+      height:1px;
+      min-height:47px;
+    }
+
+    .collapse .nav li>a {
+      color:#333;
+      background-color:transparent;
+      min-height:47px;
+
+      &:focus,&:hover {
+        color: #EEE;
+        background-color:rgba(128,128,128,0.4);
+      }
+    }
+    .collapse .nav .active>a {
+      color: #EEE;
+      background-color:rgba(128,128,128,0.4);
+    }
+  }
+
+  nav.navbar {
+    background-color:#d1baff;
+    border:none;
+    border-bottom:2px #fff solid;
+    border-radius: 0px;
+    margin:0px;
+    transition:ease-out all 0.56s;
+    z-index: 1;
+
+    .navbar-header {
+      height:1px;
+      min-height:$nh;
+      transition:ease-out all 0.56s;
+
+      .navbar-brand {
+        padding:0 30px;
+        margin: 0px 50px 0px 0px;
+        font-weight: 700;
+        font-style: oblique;
+        @include verticalcentre;
+      }
+    }
+
+    .collapse .nav li>a {
+      display:block;
+      padding:0px 15px;
+      color:#333;
+      background-color:rgba(128,128,128,0.0);
+      min-height:$nh;
+      height:1px;
+      transition:ease-out all 0.56s;
+
+      &:focus,&:hover {
+        color: #EEE;
+        background-color:rgba(128,128,128,0.4);
+      }
+
+      span {
+        font-size:18px;
+        color:inherit;
+        @include verticalcentre;
+      }
+      span.caret {
+        display:inline-block;
+      }
+    }
+
+    .collapse .nav .active>a {
+      color: #EEE;
+      background-color:rgba(128,128,128,0.4);
+    }
+  }
 
   header {
     border-radius: 0px;
@@ -25,58 +119,86 @@ nav {
       color:#fff;
     }
   }
-}
 
-.fillspace {
-  height:500px;
-}
-.one {
-  background-color:#a193b1;
-}
-.two {
-  background-image:url('http://i44.tinypic.com/2prir2b.jpg');
-  background-size:cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-ul {
-  padding:0px;
-  margin:0px;
-  .item {
-    list-style-type: none;
-    padding:10px;
-    div {
-      height:225px;
-      background-color:#775e6b;
-    }
+  .fillspace {
+    height:500px;
+
     &:after {
       content:"";
+      display:block;
       clear:both;
     }
   }
-}
+  .one {
+    background-color:#a193b1;
 
-footer {
-  width:100%;
-  padding:0px;
-  margin:0px;
-  height:200px;
-  background-color:#333;
-  text-align:center;
+    @media #{$minimum} {
+      height:auto;
+    }
 
-  span {
-    color:#666;
-    margin: 0 auto;
-    @include verticalcentre;
+    @media #{$smallScr} {
+      height:auto;
+    }
+
+    @media #{$smartphone} {
+      height:auto;
+    }
   }
+  .two {
+    background-image:url('http://i44.tinypic.com/2prir2b.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  ul {
+    padding:0px;
+    margin:0px;
+    .item {
+      list-style-type: none;
+      padding:10px;
+      div {
+        height:225px;
+        background-color:#775e6b;
+      }
+      &:after {
+        content:"";
+        clear:both;
+      }
+    }
+  }
+
+  footer {
+    width:100%;
+    padding:0px;
+    margin:0px;
+    height:200px;
+    background-color:#333;
+    text-align:center;
+
+    span {
+      color:#666;
+      margin: 0 auto;
+      @include verticalcentre;
+    }
+  }
+
 }
 
-.admin-bar {
+.admin>#contain-body header.block {
+  margin-top:($nh); //admin-bar height = 40
+}
+
+#contain-body header.block {
+  margin-top:($nh); //admin-bar height = 40
+}
+
+.admin>.admin-bar {
 	width: 100%;
 	height: 40px;
 	background-color: #3b3842;
 	position: fixed;
 	top: 0px;
+  z-index:99;
 
   .brand {
     color: #999;

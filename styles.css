@@ -1,82 +1,192 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\000038}}
-#contain-body {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\0000316}}
+.navbar {
+  min-height: inherit; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\0000319}}
+.navbar-brand {
+  height: auto;
+  padding: 0px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\0000323}}
+.nav > li > a {
   padding: 0px;
+  display: block; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\0000328}}
+.admin > #contain-body {
   margin-top: 40px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\0000312}}
-  #contain-body nav {
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\0000332}}
+#contain-body {
+  padding: 0px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\0000335}}
+  #contain-body nav.navbar.sticky {
+    background-color: rgba(232, 221, 255, 0.88);
+    position: fixed;
+    width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\0000340}}
+    #contain-body nav.navbar.sticky .navbar-header {
+      height: 1px;
+      min-height: 47px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\0000345}}
+    #contain-body nav.navbar.sticky .collapse .nav li > a {
+      color: #333;
+      background-color: transparent;
+      min-height: 47px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\0000350}}
+      #contain-body nav.navbar.sticky .collapse .nav li > a:focus, #contain-body nav.navbar.sticky .collapse .nav li > a:hover {
+        color: #EEE;
+        background-color: rgba(128, 128, 128, 0.4); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\0000355}}
+    #contain-body nav.navbar.sticky .collapse .nav .active > a {
+      color: #EEE;
+      background-color: rgba(128, 128, 128, 0.4); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\0000361}}
+  #contain-body nav.navbar {
     background-color: #d1baff;
     border: none;
     border-bottom: 2px #fff solid;
     border-radius: 0px;
-    margin: 0px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\0000320}}
+    margin: 0px;
+    -webkit-transition: ease-out all 0.56s;
+    transition: ease-out all 0.56s;
+    z-index: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\0000370}}
+    #contain-body nav.navbar .navbar-header {
+      height: 1px;
+      min-height: 85px;
+      -webkit-transition: ease-out all 0.56s;
+      transition: ease-out all 0.56s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\0000375}}
+      #contain-body nav.navbar .navbar-header .navbar-brand {
+        padding: 0 30px;
+        margin: 0px 50px 0px 0px;
+        font-weight: 700;
+        font-style: oblique;
+        display: block;
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\0000384}}
+    #contain-body nav.navbar .collapse .nav li > a {
+      display: block;
+      padding: 0px 15px;
+      color: #333;
+      background-color: rgba(128, 128, 128, 0);
+      min-height: 85px;
+      height: 1px;
+      -webkit-transition: ease-out all 0.56s;
+      transition: ease-out all 0.56s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\0000393}}
+      #contain-body nav.navbar .collapse .nav li > a:focus, #contain-body nav.navbar .collapse .nav li > a:hover {
+        color: #EEE;
+        background-color: rgba(128, 128, 128, 0.4); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\0000398}}
+      #contain-body nav.navbar .collapse .nav li > a span {
+        font-size: 18px;
+        color: inherit;
+        display: block;
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\00003103}}
+      #contain-body nav.navbar .collapse .nav li > a span.caret {
+        display: inline-block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\00003108}}
+    #contain-body nav.navbar .collapse .nav .active > a {
+      color: #EEE;
+      background-color: rgba(128, 128, 128, 0.4); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\00003114}}
   #contain-body header {
     border-radius: 0px;
     background-color: #3b2d4b;
     margin: 0px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\0000324}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\00003118}}
     #contain-body header h1, #contain-body header h2 {
       color: #fff; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\0000330}}
-.fillspace {
-  height: 500px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\0000333}}
-.one {
-  background-color: #a193b1; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\0000336}}
-.two {
-  background-image: url("http://i44.tinypic.com/2prir2b.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\0000342}}
-ul {
-  padding: 0px;
-  margin: 0px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\0000345}}
-  ul .item {
-    list-style-type: none;
-    padding: 10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\0000348}}
-    ul .item div {
-      height: 225px;
-      background-color: #775e6b; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\0000352}}
-    ul .item:after {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\00003123}}
+  #contain-body .fillspace {
+    height: 500px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\00003126}}
+    #contain-body .fillspace:after {
       content: "";
+      display: block;
       clear: both; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\00003132}}
+  #contain-body .one {
+    background-color: #a193b1; }
+    @media only screen and (max-width: 320px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\00003132}}
+      #contain-body .one {
+        height: auto; } }
+    @media only screen and (min-width: 321px) and (max-width: 479px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\00003132}}
+      #contain-body .one {
+        height: auto; } }
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\00003132}}
+      #contain-body .one {
+        height: auto; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\00003147}}
+  #contain-body .two {
+    background-image: url("http://i44.tinypic.com/2prir2b.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\00003153}}
+  #contain-body ul {
+    padding: 0px;
+    margin: 0px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\00003156}}
+    #contain-body ul .item {
+      list-style-type: none;
+      padding: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\00003159}}
+      #contain-body ul .item div {
+        height: 225px;
+        background-color: #775e6b; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\00003163}}
+      #contain-body ul .item:after {
+        content: "";
+        clear: both; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\00003170}}
+  #contain-body footer {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    height: 200px;
+    background-color: #333;
+    text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\00003178}}
+    #contain-body footer span {
+      color: #666;
+      margin: 0 auto;
+      display: block;
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\0000359}}
-footer {
-  width: 100%;
-  padding: 0px;
-  margin: 0px;
-  height: 200px;
-  background-color: #333;
-  text-align: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\0000367}}
-  footer span {
-    color: #666;
-    margin: 0 auto;
-    display: block;
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\00003187}}
+.admin > #contain-body header.block {
+  margin-top: 85px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\0000374}}
-.admin-bar {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\00003191}}
+#contain-body header.block {
+  margin-top: 85px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\00003195}}
+.admin > .admin-bar {
   width: 100%;
   height: 40px;
   background-color: #3b3842;
   position: fixed;
-  top: 0px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\0000381}}
-  .admin-bar .brand {
+  top: 0px;
+  z-index: 99; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\00003203}}
+  .admin > .admin-bar .brand {
     color: #999;
     font-weight: 700;
     float: left;
@@ -86,8 +196,8 @@ footer {
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\0000389}}
-  .admin-bar .logout {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\00003211}}
+  .admin > .admin-bar .logout {
     float: right;
     margin-right: 15px;
     display: block;
@@ -95,12 +205,12 @@ footer {
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\0000393}}
-    .admin-bar .logout a {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\00003215}}
+    .admin > .admin-bar .logout a {
       color: #82afe6;
       text-decoration: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\0000396}}
-      .admin-bar .logout a:hover, .admin-bar .logout a:focus {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/vm7488\/Documents\/GIT\/bs_sticky_nav\/styles\.scss}line{font-family:\00003218}}
+      .admin > .admin-bar .logout a:hover, .admin > .admin-bar .logout a:focus {
         color: #e8ffff; }
 
 /*# sourceMappingURL=styles.css.map */
